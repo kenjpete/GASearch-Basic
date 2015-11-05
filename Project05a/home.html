@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ken's General Aviation News &amp; Accidents Search Engine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet" />
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    
+</head>
+<body>
+    <h1>Ken's General Aviation </h1>
+    <img class="logo" src="images/GAicon-125.png" />
+    <h1>News &amp; Accidents Search Engine</h1>
+
+    <p>
+        Welcome to Ken's General Aviation News &amp; Accidents Search Engine!<br /> 
+        Here you can search the best general aviation websites, all in one location.
+    </p>
+
+    <p>
+        <a href="#" onclick="window.open(encodeURI('https://cse.google.com/cse/publicurl?cx=010646117115720095894:jlwrtvhovry'), '_blank', 'location=yes');">
+            Get Searching!
+        </a>
+
+    </p>
+    <script type="text/javascript">
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+            window.open = cordova.InAppBrowser.open;
+        }
+
+    </script>
+</body>
+</html>
